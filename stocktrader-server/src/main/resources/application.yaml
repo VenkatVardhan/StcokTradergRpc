@@ -1,0 +1,4 @@
+grpc:
+  server:
+    port: 9090
+    enable-reflection : true  #similar to swagger enabled us to use postman by expose endpoints
