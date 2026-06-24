@@ -17,8 +17,8 @@ public class StockTradingServiceImpl extends StockTradingServiceGrpc.StockTradin
 
     @Override
     public void getStockPrice(StockRequest request, StreamObserver<StockResponse> responseObserver) {
-        super.getStockPrice(request, responseObserver);
-       //Stock stockEntity = stockRepository.findByStockSymbol(String request.getStockSymbol());
+
+
         String stockSymbol  = request.getStockSymbol();
         Stock stockEntity = stockRepository.getByStockSymbol(stockSymbol);
         StockResponse response = StockResponse.newBuilder().setPrice(stockEntity.getPrice()).setStockSymbol(stockEntity.getStockSymbol())
