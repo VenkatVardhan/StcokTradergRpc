@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="stocktrader-server" />
+        <module name="stocktrader-client" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="stocktrader-client" options="-parameters" />
       <module name="stocktrader-server" options="-parameters" />
     </option>
   </component>
