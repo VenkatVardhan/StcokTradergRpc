@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/grpcdemo.iml" filepath="$PROJECT_DIR$/grpcdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stocktrader-client/stocktrader-client.iml" filepath="$PROJECT_DIR$/stocktrader-client/stocktrader-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/stocktrader-server/stocktrader-server.iml" filepath="$PROJECT_DIR$/stocktrader-server/stocktrader-server.iml" />
     </modules>
   </component>
