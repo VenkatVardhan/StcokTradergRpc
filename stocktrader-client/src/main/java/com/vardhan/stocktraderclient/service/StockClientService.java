@@ -12,7 +12,6 @@ public class StockClientService {
     private StockTradingServiceGrpc.StockTradingServiceBlockingStub serviceBlockingStub;
     //blocking stub is unary communication similar to native rest
     // grpc server has StockResponse method(StockRequest) so call that in the code using blocking stub
-    //jj
     public StockResponse getStockPrice(String stockSymbol){
         StockRequest request = StockRequest.newBuilder().setStockSymbol(stockSymbol).build();
         StockResponse response = serviceBlockingStub.getStockPrice(request);
